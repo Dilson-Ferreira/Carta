@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Carta Sci-Fi</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      height: 100vh;
+      background: radial-gradient(ellipse at center, #0a0f1f 0%, #000 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Orbitron', sans-serif;
+      color: #00ffe1;
+    }
+
+    .carta {
+      background: rgba(0, 0, 0, 0.6);
+      width: 320px;
+      padding: 30px 20px;
+      border: 2px solid #00ffe1;
+      box-shadow: 0 0 15px #00ffe1, 0 0 30px #00ffe1 inset;
+      border-radius: 12px;
+      text-shadow: 0 0 3px #00ffe1;
+      animation: pulse 2s infinite alternate;
+    }
+
+    .carta p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    @keyframes pulse {
+      from {
+        box-shadow: 0 0 10px #00ffe1, 0 0 20px #00ffe1 inset;
+      }
+      to {
+        box-shadow: 0 0 20px #00ffe1, 0 0 40px #00ffe1 inset;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="carta">
+    <p>Comandante [Nome],<br><br>
+    <p>Carta de Xylos</p> <br>
+    Esta é uma mensagem codificada proveniente da base Alfa-9. As informações contidas aqui são cruciais para a missão.<br><br>
+    <p>Insira o codigo do comandante para continuar</p> <br>
+    <input type="password" placeholder="Insira o Codigo" class="codigo">
+  </div>
+  <style>.codigo {
+    width: 80%;
+    padding: 8px;
+    margin-top: 15px;
+    background: #000;
+    border: 1px solid #00ffe1;
+    border-radius: 6px;
+    color: #00ffe1;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    box-shadow: 0 0 10px #00ffe1;
+  }
+  </style>
+</body>
+</html>
